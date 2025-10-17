@@ -37,3 +37,6 @@ def edit_profile(request):
         # Handle profile editing logic here
         pass
     return render(request, 'edit_profile.html')
+
+def playlist_view(request):
+    return render(request, 'playlist.html')

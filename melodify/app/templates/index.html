@@ -517,6 +517,10 @@
         <a href="{% url 'logout' %}" class="logout-btn">Logout</a>
       </div>
       <div class="user-info" style="display: flex; align-items: center; gap: 0.7rem;">
+        <span style="color:#00ffe0; font-weight:500;"></span>
+        <a href="{% url 'playlist' %}" class="edit-btn" style="background:#23272f; color:#00ffe0; border-radius:8px; padding:0.3rem 0.8rem; text-decoration:none; font-size:0.95rem;">Playlist</a>
+      </div>
+      <div class="user-info" style="display: flex; align-items: center; gap: 0.7rem;">
         <img src="{% if user.profile.profile_pic %}{{ user.profile.profile_pic.url }}{% else %}/static/default-profile.png{% endif %}" alt="Profile" style="width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid #00ffe0;">
         <span style="color:#00ffe0; font-weight:500;">{{ user.username }}</span>
         <a href="#" class="edit-btn" style="background:#23272f; color:#00ffe0; border-radius:8px; padding:0.3rem 0.8rem; text-decoration:none; font-size:0.95rem;">Edit</a>
@@ -648,7 +652,7 @@
     src: "/media/audio/Gundelonaa.mp3"
   },
   {
-    title: "Bad Boyzz",
+    title: "Ninnila",
     artist: "Unknown",
     cover: "/media/covers/tholi-prema.jpg",
     src: "/media/audio/Ninnila.mp3"
